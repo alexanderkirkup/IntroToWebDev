@@ -25,42 +25,89 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="index.html">Home</a>
                 <a class="nav-item nav-link" href="menu.html">Menu</a>
-                <a class="nav-item nav-link" href="contact-us.html">Contact Us</a>
+                <a class="nav-item nav-link active" href="#">Contact Us <span class="sr-only">(current)</span></a>
                 </div>
             </div>
         </nav>
 
-        <body>
-            <form action="submit.html" method="POST">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name"><br />
-                <label for="email">Email:</label>
-                <input type="text" id="email" name="email"><br />
-                <label for="phone">Phone:</label>
-                <input type="text" id="phone" name="phone"><br />
-                <label for="inquiry">Reason for Inquiry:</label>
-                <select name="inquiry" id="inquiry">
-                    <option value="catering" selected>Catering</option>
-                    <option value="party">Private Party</option>
-                    <option value="feedback">Feedback</option>
-                    <option value="other">Other</option>
-                </select><br />
-                <label for="info">Additional Information:</label>
-                <textarea id="info" name="info"></textarea><br />
-                <label for="been">Have you been to the restaurant?</label>
-                <input type="radio" name="been" value="No" checked>No
-                <input type="radio" name="been" value="Yes">Yes<br />
-                <label for="contactDays">Best days to contact you:</label>
-                <input type="checkbox" name="contactDays" value="M">M
-                <input type="checkbox" name="contactDays" value="T">T
-                <input type="checkbox" name="contactDays" value="W">W
-                <input type="checkbox" name="contactDays" value="Th">Th
-                <input type="checkbox" name="contactDays" value="F">F<br />
-                <input type="submit" name="submit" value="Send Request">
-            </form>
-        </body>
+        <div class="jumbotron">
+            <h3>Get in touch</h3>
+        </div>
+
+        <section class="container">
+            <form>
+                <div class="form-group">
+                  <label for="nameInput">Name</label>
+                  <input type="text" class="form-control" id="nameInput" placeholder="Type name here">
+                </div>
+                <div class="form-group">
+                    <label for="emailInput">Email address</label>
+                    <input type="email" class="form-control" id="emailInput" placeholder="name@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="phoneInput">Phone</label>
+                    <input type="tel" class="form-control" id="phoneInput" placeholder="Type phone number here">
+                </div>
+                <div class="form-group">
+                  <label for="inquiryReasonSelect">Reason for Inquiry</label>
+                  <select class="form-control" id="inquiryReasonSelect">
+                    <option>Catering</option>
+                    <option>Private Party</option>
+                    <option>Feedback</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                    <label for="infoTextarea">Additional Information</label>
+                    <textarea class="form-control" id="infoTextarea" rows="3"></textarea>
+                  </div>
+                <div class="form-group">
+                    <label for="beenRadio">Have you been to the restaurant?</label><br />
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="beenRadio" id="beenNo" value="no" checked>
+                        <label class="form-check-label" for="beenNo">No</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="beenRadio" id="beenYes" value="yes">
+                        <label class="form-check-label" for="beenYes">Yes</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="contactDays">Best days to contact you</label><br />
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="contactDays" id="mondayCheckbox" value="monday">
+                        <label class="form-check-label" for="mondayCheckbox">M</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="contactDays" id="tuesdayCheckbox" value="tuesday">
+                        <label class="form-check-label" for="tuesdayCheckbox">T</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="contactDays" id="wednesdayCheckbox" value="wednesday">
+                        <label class="form-check-label" for="wednesdayCheckbox">W</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="contactDays" id="thursdayCheckbox" value="thursday">
+                        <label class="form-check-label" for="thursdayCheckbox">Th</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="contactDays" id="fridayCheckbox" value="friday">
+                        <label class="form-check-label" for="fridayCheckbox">F</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="contactDays" id="saturdayCheckbox" value="saturday" disabled>
+                        <label class="form-check-label" for="saturdayCheckbox">S</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="contactDays" id="sundayCheckbox" value="sunday" disabled>
+                        <label class="form-check-label" for="sundayCheckbox">Su</label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+        </section>
 
         <footer>
             <div>
