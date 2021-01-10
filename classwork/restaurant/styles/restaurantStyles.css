@@ -1,0 +1,9 @@
+header, footer{
+    background-color: #485058;
+    color: #ffffff;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
